@@ -1,0 +1,274 @@
+body{
+    background-color: #747474;
+    margin: 0 auto;
+}
+
+/* tete de page */
+
+header.header{
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    margin-top: unset;
+    transition: 0.4s;
+    padding: 10px 0px;
+}
+
+
+.top-page {
+    background: url('header.jpg');
+    background-size: cover;
+    background-position:center;
+    height: 90vh;
+    padding: 25px;
+}
+
+.top-page_sur_mesure {
+    background: url('header5.jpg');
+    background-size: cover;
+    background-position:center;
+    height: 90vh;
+    padding: 25px;
+}
+
+.button{
+    font-size: 110%;
+}
+
+h2.logo{
+    font-size: 50px;
+    color: white;
+    margin:30px 15px;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 500px;
+    margin-left: 50px;
+    
+}
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav.nav li a:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+
+h1.big_title{
+    font-size: 500%;
+    color: #fb3839;
+    padding-left: 1%;
+    padding-right: 54%;
+    border-radius: 10px;
+    border-color: black; 
+    margin-bottom: 20px;
+    margin-top: 15%;
+}
+
+/* section_title */
+
+.section_title{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    position: relative;
+    margin: 60px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.section_title::before{
+    content: "";
+    position: absolute;
+    background-color: #C21523;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+/* boutique */
+
+.grille{
+    max-width: 1600px;
+    width: 95%;
+    height: auto;
+    margin: 30px auto;
+    border: 1px solid #333;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px;
+    border: none;
+}
+
+.grid_item_all{
+    width: 300px;
+    height: 300px;
+    background:#333;
+    position: relative;
+}
+
+.item1{
+    background-image: url("plioir10.jpg");
+    background-size: cover;
+    background-position:center;
+}
+.item2{
+    background-image: url("plioir5.jpg");
+    background-size: cover;
+    background-position:center;
+}
+.item3{
+    background-image: url("rouge.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+.item4{
+    background-image: url("orange\ \(7\).jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+.item5{
+    background-image: url("producte.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+.item6{
+    background-image: url("producte2.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+/* details */
+
+.details{
+    position: absolute;
+    width: 260px;
+    bottom: 0;
+    background-color: #ffffff7e;
+    padding: 1px 20px;
+}
+
+.name{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.price{
+    color: #C21523;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* sur mesure */
+
+.creation{
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.impression{
+    display: flex;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.image_creation,
+.image_impression{
+    width: 500px;
+    border:5px solid #C21523;
+}
+
+.explication{
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+section#sur_mesure .formulaire{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C21523;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px -10px;
+    margin-bottom: 20px;
+}
+
+section#sur_mesure .formulaire form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+section#sur_mesure .formulaire form input{
+    width: 47%;
+}
+
+section#sur_mesure .formulaire form input,
+section#sur_mesure .formulaire form textarea{
+    color: #747474;
+    background-color: #C21523;
+    margin-bottom: 10px 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #747474;
+    transition: 0.2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section#sur_mesure .formulaire form textarea{
+    width: 100%;
+    resize: none;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+section#sur_mesure .formulaire form input:hover,
+section#sur_mesure .formulaire form textarea:hover{
+    transition: 0.2s;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+section#sur_mesure .formulaire form button{
+    width: 192px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    font-weight: 1.2em;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+}
+
+section#sur_mesure .formulaire form button:hover{
+    background-color: #757575;
+}

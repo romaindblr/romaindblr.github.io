@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="bras_robot.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+    <title>R3D3</title>
+</head>
+
+<body>
+
+    <header class="header" id="navbar">
+        <h2 class="logo">R3D3</h2>
+        <nav class="nav">
+            <li><a class="button" href="index.html">Accueil</a></li>
+            <li><a class="button" href="index.html#boutique">Boutique</a></li>
+            <li><a class="button" href="sur_mesure.html">Sur Mesure</a></li>
+            <li><a class="button" href="a_propos.html">A Propos</a></li>
+        </nav>
+    </header>
+    <section class="top-page_sur_mesure">
+        <h1 class="big_title">The Creation is easy</h1>
+    </section>
+
+    <section class="sur_mesure" id="sur_mesure">
+        <h2 class="section_title" >Sur Mesure</h2>
+
+        <div class="creation">
+            <img src="modelisation.jpg" alt="image de personne qui crée un objet en 3d" class="image_creation">
+            <h3 class="explication">Création d'object en 3d au format STL près a l'impression</h3>
+        </div>
+        <div class="impression">
+            <h3 class="explication">Impression d'objet 3d a la demande de taille maximum 23*23*25cm</h3>
+            <img src="impression.jpg" alt="image d'impression d'un objet en 3d" class="image_impression">
+        </div>
+        
+        <div class="formulaire">
+            <div>
+            <h1 class="demande">Envoyer votre demande</h1><br>
+            </div>
+            <form method="post" onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" name="name"  id="name" placeholder="Entrer votre nom..." required="">
+                <input type="text" name="email" id="email" placeholder="Entrer votre email..." required="">
+                <textarea name="message" id="message" placeholder="Entrer votre message..." required></textarea>
+                <button class="send" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
